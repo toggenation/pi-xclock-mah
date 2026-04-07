@@ -31,27 +31,38 @@ chmod +x ./install.sh && ./install.sh [newhostname]
 - [Changing Colouring](./COLOURS.md)
 - [Determining Screen Resolution](./X11.md)
 
+## 1. Install Raspberry Pi OS Lite (64-bit) on the Raspberry Pi, configure it as follows:
 
-## 1. Install Raspbian \*_Bullseye_\* on the Raspberry Pi, configure it as follows:
-
-- Image: `Raspberry Pi OS (Legacy, 64-bit) Lite`
+- Image: `Raspberry Pi OS Lite (64-bit)`
 - Then customize the settings as follows:
     - **General**
         - Hostname: `mah-clock[1]` <- where the number is a unique identifier
         - User: `pi`
         - Password: `[set this]` <- this should be predefined
         - Wireless LAN: Connect to your Wi-Fi network
-            - Set the LAN country to `AU`
+            - Set capital city to your capital to set WiFi regulatory domain
         - Timezone: `Australia/Melbourne`
         - Keyboard: `us`
 
-      [<img src="./README_ASSETS/Pi-settings-1_general.png" width="300">](./README_ASSETS/Pi-settings-1_general.png)
+      [<img src="./README_ASSETS/2026-04-07 16_48_51-Raspberry Pi Imager v2.0.7.png" width="300">](./README_ASSETS/2026-04-07%2016_48_51-Raspberry%20Pi%20Imager%20v2.0.7.png)
+
+      [<img src="./README_ASSETS/2026-04-07 16_49_20-Raspberry Pi Imager v2.0.7.png" width="300">](./README_ASSETS/2026-04-07%2016_49_20-Raspberry%20Pi%20Imager%20v2.0.7.png)
+
+      [<img src="./README_ASSETS/2026-04-07 16_49_39-Raspberry Pi Imager v2.0.7.png" width="300">](./README_ASSETS/2026-04-07%2016_49_39-Raspberry%20Pi%20Imager%20v2.0.7.png)
+
+      [<img src="./README_ASSETS/2026-04-07 16_50_10-Raspberry Pi Imager v2.0.7.png" width="300">](./README_ASSETS/2026-04-07%2016_50_10-Raspberry%20Pi%20Imager%20v2.0.7.png)
+
 
     - **Services**
         - SSH: Enable
         - Enable `Use password authentication`
 
-      [<img src="./README_ASSETS/Pi-settings-2_services.png" width="300">](./README_ASSETS/Pi-settings-2_services.png)
+      [<img src="./README_ASSETS/2026-04-07 16_50_16-Raspberry Pi Imager v2.0.7.png" width="300">](./README_ASSETS/2026-04-07%2016_50_16-Raspberry%20Pi%20Imager%20v2.0.7.png)
+       
+      [<img src="./README_ASSETS/2026-04-07 16_50_21-Raspberry Pi Imager v2.0.7.png" width="300">](./README_ASSETS/2026-04-07%2016_50_21-Raspberry%20Pi%20Imager%20v2.0.7.png)
+
+      [<img src="./README_ASSETS/2026-04-07 16_50_27-Raspberry Pi Imager v2.0.7.png" width="300">](./README_ASSETS/2026-04-07%2016_50_27-Raspberry%20Pi%20Imager%20v2.0.7.png)
+
 
 ## 2. Log into the Raspberry Pi via SSH
 
